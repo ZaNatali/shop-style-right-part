@@ -34,7 +34,7 @@ body{
     padding-right: 15px;
  }
 
- .header{
+.header{
     height: 100px;
     display: flex;
     align-items: center;
@@ -60,7 +60,7 @@ body{
     border-right: 1px solid #2c71b8;
 }
 
-.menu a{
+.menu-list{
     display: flex;
     height: 50px;
     text-decoration: none;
@@ -69,10 +69,10 @@ body{
     color: #2c71b8;
     font-size: 21px;
 
-    /* transition: all .5s; */
+    transition: all .5s;
 }
 
-.menu a:hover{
+.menu-list:hover{
     background-color: #2c71b8;
     color: white;
 }
@@ -81,24 +81,333 @@ body{
     position: absolute;
     left: -1px;
     top: 50px;
-    /* display: none; */
+    display: none;
    
 }
 
 .sub-menu-list li{
     width: 286px;
     height: 40px;
-    
+    background-color: #2c71b8;
+           
+}
+
+.sub-menu-list li:hover{
+    background-color: white;
+}
+
+.sub-menu-list{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #2c71b8;
+}
+.sub-menu-link{
+    font-size: 21px;
+    text-decoration: none;
+    line-height: 40px;
+    padding-left: 28px;
+    color: white;
     
 }
 
 
-.menu li:hover .sub-menu-list{
+.sub-menu-link:hover{
+    display: block;
+    color: #2c71b8;
+    margin-left: 15px;
+    transition: all .5s;
+}
+
+.menu>li:hover .sub-menu-list{
     display: block;
     
 }
 
+.container-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    position: relative;
+        
+}
+.search-area{
+    width: 200px;
+    height: 40px;
+    border: 1px solid#2c71b8;
+    font-size: 21px;
+    color: #2c71b8;
+    
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.container-trolley{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    background-image: url(./images/trolley-blue.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    line-height: 40px;
+   
+}
+
+.trolley-number{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2c71b8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: 45px;
+
+}
+
+.main{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: white;
+   
+    /* background-color: rgba(255, 255, 255, 0.2) */
+}
+
+.slider{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: white;
+    
+}
+
+.left-part{
+    flex: 0 0 25%;
+    max-width: 25%;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 775px;
+}
+
+.right-part{
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+ [class*="part"]{
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+.form{
+    padding: 20px 0px 20px 30px;
+}
+
+.input{
+    margin: 10px 0px 10px 0px;
+}
+
+.form-padding{
+    padding: 10px 0px 10px 0px;
+    font-size: 21px;
+}
+
+.buttom{
+    width: 210px;
+    height: 50px;
+    margin: 30px 30px 30px 30px;
+    font-size: 21px;
+    font-weight: bold;
+    background: #2c71b8;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.buttom:hover{
+    background-color: white;
+    color: #2c71b8;
+    border: 1px solid #2c71b8;
+}
+
+.right-part{
+    flex-direction: column;
+    display: block;
+}
 
 
+.form-1{
+    padding-left: 30px;
+}
 
+.r-part{
+    height: 60px;
+    display: flex;    
+    align-items: center;
+}
+.right-part-1{
+    font-size: 14px;
+    font-weight: light;
+    color: white;
+    text-decoration: none;
+
+    
+}
+
+.right-part-2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.text{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.search-2{
+    width: 270px;
+    height: 40px;
+    background-color: #2c71b8;
+    color: white;
+    border: 1px solid white;
+    
+}
+
+.search-2 option{
+    width: 270px;
+    height: 40px; 
+    border-radius: 1px solid white;
+    outline: none;
+    
+}
+
+
+.search-2 option:hover{
+    background-color: white;
+    color: #2c71b8;
+} 
+
+.right-part-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.position{
+    width: 270px;
+    height: 635px;
+    margin-top: 15px;
+    background-color: rgba(44, 113, 184, 0.7);
+    position: relative;
+    border: 1px solid white;
+    
+}
+
+.image{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 180px;
+}
+.main-picture{
+    width: 100px;
+    height: 90px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.small-image{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+}
+
+.corner, .heart{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2c71b8;
+    padding: 4px;
+    margin: 10px 10px 0px 0px;
+}
+
+.heart-1, .corner-1{
+    width: 30px;
+    height: 30px;
+    background-color:#2c71b8;
+    padding: 4px;
+    margin: 10px 10px 0px 0px;
+}
+
+
+.main-description{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0px 10px 0px;
+}
+.description{
+    font-size: 21px;
+    margin: 12px 0px 12px 0px;    
+} 
+
+.description,.main-description,.second-d{
+    padding-left: 15px;
+}
+.word{
+    font-weight: bold;
+}
+
+.rpice{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 15px 0px 15px 0px;
+    font-weight: bold;
+}
+
+.price-d{
+    font-size: 48px;
+}
+
+.price-c{
+    font-size: 21px;
+}
+.buttom-1{
+    width: 210px;
+    height: 50px;
+    margin: 15px 0px 0px 30px;
+    font-size: 21px;
+    font-weight: bold;
+    background: #2c71b8;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+
+
+}
+
+.buttom-1:hover{
+    background-color: white;
+    color: #2c71b8;
+    border: 1px solid #568dc6;
+}
+.buttom-trolley{
+    background: #568dc6;
+    background-image: url(./images/trolley.png);
+    background-repeat: no-repeat;
+    background-position: 95% 45%;
+}
+
+.buttom-trolley:hover{
+    background-color: white;
+    color: #568dc6;
+    border: 1px solid #568dc6;
+}
 
