@@ -201,15 +201,35 @@ body{
     padding-right: 15px;
  }
 .form{
-    padding: 20px 0px 20px 30px;
+    padding: 20px 0px 0px 18px;
+}
+
+label:before{
+    content: "";
+    display: inline-flex;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + label:before{
+    background-color: white;
 }
 
 .input{
-    margin: 10px 0px 10px 0px;
+    display: flex;
+    
+    
 }
 
 .form-padding{
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px 22px 0px;
     font-size: 21px;
 }
 
